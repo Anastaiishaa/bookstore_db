@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Сотрудники магазина</h1>
+
+<table border="1" product="dataframe">
+  <thead>
+    <tr>
+      <th>ID сотрудника</th>
+      <th>ФИО</th>
+      <th>Должность</th>
+      <th>Телефон</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1349</td>
+      <td>Сергеева Дарья Андреевна</td>
+      <td>Менеджер по продажам</td>
+      <td>8(911)5210332</td>
+    </tr>
+    <tr>
+      <td>1449</td>
+      <td>Иванова Кира Артемовна</td>
+      <td>Бухгалтер</td>
+      <td>8(921)2090277</td>
+    </tr>
+    <tr>
+      <td>37188</td>
+      <td>Гришин Михаил Павлович</td>
+      <td>Администратор</td>
+      <td>8(911)4809202</td>
+    </tr>
+    <tr>
+      <td>4242</td>
+      <td>Тарасов Максим Ярославович</td>
+      <td>Продавец</td>
+      <td>8(911)6070307</td>
+    </tr>
+    <tr>
+      <td>1831</td>
+      <td>Петрова Александра Георгиевна</td>
+      <td>Продавец</td>
+      <td>8(906)0763445</td>
+    </tr>
+    <tr>
+      <td>8065</td>
+      <td>Пономарев Егор Дмитриевич</td>
+      <td>Маркетолог</td>
+      <td>8(911)3586506</td>
+    </tr>
+    <tr>
+      <td>2654</td>
+      <td>Прокофьева Анастасия Леонидовна</td>
+      <td>Продавец</td>
+      <td>8(921)7391840</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

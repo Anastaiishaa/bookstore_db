@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Анализ предпочтений клиентов</h1>
+
+<table border="1" product="dataframe">
+  <thead>
+    <tr>
+      <th>ID отзыва</th>
+      <th>Название книги</th>
+      <th>Автор книги</th>
+      <th>Текст отзыва</th>
+      <th>Оценка</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Граф Монте-Кристо</td>
+      <td>Александр Дюма</td>
+      <td>Отличная книга, очень увлекательный сюжет!</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Клуб самоубийц</td>
+      <td>Роберт Льюис Стивенсон</td>
+      <td>Не понравилось, ожидала большего от автора.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Отель</td>
+      <td>Артур Хейли</td>
+      <td>Хорошая книга для начинающих!</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Война и Мир</td>
+      <td>Лев Толстой</td>
+      <td>Сложный текст, но мне понравилось!</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>Унесенные ветром</td>
+      <td>Маргарет Митчелл</td>
+      <td>Лучший роман, который я читала в этом году.</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>Клуб самоубийц</td>
+      <td>Роберт Льюис Стивенсон</td>
+      <td>Книга оказалась скучной и затянутой.</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>Мастер и Маргарита</td>
+      <td>Михаил Булгаков</td>
+      <td>Очень интересные персонажи и захватывающий финал!</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

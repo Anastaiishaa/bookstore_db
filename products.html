@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Книги в Магазине</h1>
+
+<table border="1" product="dataframe">
+  <thead>
+    <tr>
+      <th>ID товара</th>
+      <th>Название книги</th>
+      <th>Автор книги</th>
+      <th>Жанр</th>
+      <th>Цена</th>
+      <th>Очки</th>
+      <th>Количество в наличии</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2797422</td>
+      <td>Унесенные ветром</td>
+      <td>Маргарет Митчелл</td>
+      <td>Роман</td>
+      <td>323.99</td>
+      <td>42</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>2757685</td>
+      <td>Клуб самоубийц</td>
+      <td>Роберт Льюис Стивенсон</td>
+      <td>Детектив</td>
+      <td>243.00</td>
+      <td>27</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>2918634</td>
+      <td>1984</td>
+      <td>Джордж Оруэлл</td>
+      <td>Антиутопия</td>
+      <td>295.21</td>
+      <td>32</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>2926100</td>
+      <td>Мастер и Маргарита</td>
+      <td>Михаил Булгаков</td>
+      <td>Роман</td>
+      <td>266.99</td>
+      <td>29</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>2597421</td>
+      <td>Граф Монте-Кристо</td>
+      <td>Александр Дюма</td>
+      <td>Роман</td>
+      <td>295.59</td>
+      <td>32</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>2977130</td>
+      <td>Война и Мир</td>
+      <td>Лев Толстой</td>
+      <td>Роман</td>
+      <td>325.89</td>
+      <td>36</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>2410259</td>
+      <td>Отель</td>
+      <td>Артур Хейли</td>
+      <td>Детектив</td>
+      <td>430.29</td>
+      <td>47</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

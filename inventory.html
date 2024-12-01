@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Инвентаризация</h1>
+
+<table border="1" product="dataframe">
+  <thead>
+    <tr>
+      <th>ID товара</th>
+      <th>Название книги</th>
+      <th>Автор книги</th>
+      <th>Количество</th>
+      <th>ID поставки</th>
+      <th>ID поставщика</th>
+      <th>Название поставщика</th>
+      <th>Дата поставки</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2797422</td>
+      <td>Унесенные ветром</td>
+      <td>Маргарет Митчелл</td>
+      <td>5</td>
+      <td>1</td>
+      <td>7</td>
+      <td>ЛЕМА</td>
+      <td>2023-09-01</td>
+    </tr>
+    <tr>
+      <td>2757685</td>
+      <td>Клуб самоубийц</td>
+      <td>Роберт Льюис Стивенсон</td>
+      <td>9</td>
+      <td>2</td>
+      <td>6</td>
+      <td>Астрель</td>
+      <td>2023-09-05</td>
+    </tr>
+    <tr>
+      <td>2597421</td>
+      <td>Граф Монте-Кристо</td>
+      <td>Александр Дюма</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+      <td>АСТ</td>
+      <td>2023-09-10</td>
+    </tr>
+    <tr>
+      <td>2977130</td>
+      <td>Война и Мир</td>
+      <td>Лев Толстой</td>
+      <td>16</td>
+      <td>4</td>
+      <td>2</td>
+      <td>Магистраль</td>
+      <td>2023-10-12</td>
+    </tr>
+    <tr>
+      <td>2918634</td>
+      <td>1984</td>
+      <td>Джордж Оруэлл</td>
+      <td>10</td>
+      <td>5</td>
+      <td>4</td>
+      <td>Росмэн</td>
+      <td>2023-10-15</td>
+    </tr>
+    <tr>
+      <td>2410259</td>
+      <td>Отель</td>
+      <td>Артур Хейли</td>
+      <td>3</td>
+      <td>6</td>
+      <td>5</td>
+      <td>Clever</td>
+      <td>2023-10-17</td>
+    </tr>
+    <tr>
+      <td>2926100</td>
+      <td>Мастер и Маргарита</td>
+      <td>Михаил Булгаков</td>
+      <td>21</td>
+      <td>7</td>
+      <td>7</td>
+      <td>ЛЕМА</td>
+      <td>2023-10-20</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

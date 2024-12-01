@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Клиенты магазина</h1>
+
+<table border="1" product="dataframe">
+  <thead>
+    <tr>
+      <th>ID клиента</th>
+      <th>Имя клиента</th>
+      <th>Email адрес</th>
+      <th>Число баллов</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>26141</td>
+      <td>Диана</td>
+      <td>rossie38@gmail.com</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>27221</td>
+      <td>Михаил</td>
+      <td>vdf342@bk.ru</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>41355</td>
+      <td>Ольга</td>
+      <td>migijov@bk.ru</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>73781</td>
+      <td>Татьяна</td>
+      <td>tamia22@yandex.ru</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td>53597</td>
+      <td>Дмитрий</td>
+      <td>pam18@inbox.ru</td>
+      <td>120</td>
+    </tr>
+    <tr>
+      <td>24535</td>
+      <td>Иван</td>
+      <td>juan44@gmail.com</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>11522</td>
+      <td>Елена</td>
+      <td>anika@list.ru</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

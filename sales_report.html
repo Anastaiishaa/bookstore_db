@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Отчет по продажам</h1>
+
+<table border="1" product="dataframe">
+  <thead>
+    <tr>
+      <th>ID продажи</th>
+      <th>Дата продажи</th>
+      <th>Название товара</th>
+      <th>Имя клиента</th>
+      <th>ФИО сотрудника</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>2023-10-01 14:30:00</td>
+      <td>Граф Монте-Кристо</td>
+      <td>Диана</td>
+      <td>Тарасов Максим Ярославович</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>2023-10-03 11:45:00</td>
+      <td>Война и Мир</td>
+      <td>Ольга</td>
+      <td>Прокофьева Анастасия Леонидовна</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>2023-10-04 16:00:00</td>
+      <td>Унесенные ветром</td>
+      <td>Татьяна</td>
+      <td>Тарасов Максим Ярославович</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>2023-10-05 18:00:00</td>
+      <td>Клуб самоубийц</td>
+      <td>Иван</td>
+      <td>Петрова Александра Георгиевна</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>2023-10-05 14:23:00</td>
+      <td>1984</td>
+      <td>Дмитрий</td>
+      <td>Петрова Александра Георгиевна</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>2023-10-05 12:30:00</td>
+      <td>Мастер и Маргарита</td>
+      <td>Елена</td>
+      <td>Петрова Александра Георгиевна</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

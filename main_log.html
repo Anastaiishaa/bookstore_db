@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            color: #483D8B;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #483D8B;
+            color: white;
+            text-align: center;
+        }
+
+        tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        @media (max-width: 600px) {
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Лог операций</h1>
+
+<table border="1" product="dataframe">
+  <thead>
+    <tr>
+      <th>log_item_id</th>
+      <th>operation_type</th>
+      <th>operation_date</th>
+      <th>user_operator</th>
+      <th>changed_data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>I</td>
+      <td>2024-11-11 17:24:41.639806+03</td>
+      <td>postgres</td>
+      <td>{"product_id":2932480,"book_name":"Дюна","author_name":"Фрэнк Герберт","genre":"Фантастика","price":384.89,"points_count":58,"books_count":15}</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>U</td>
+      <td>2024-11-11 17:29:07.290149+03</td>
+      <td>postgres</td>
+      <td>{"employee_id":1349,"employee_full_name":"Сергеева Дарья Андреевна","position":"Менеджер по продажам","phone":"8(921)5210336"}</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>D</td>
+      <td>2024-11-11 17:30:13.9147+03</td>
+      <td>postgres</td>
+      <td>{"sale_id":2,"employee_id":2654,"client_id":27221,"sale_date":"2023-10-02T09:15:00"}</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>D</td>
+      <td>2024-11-11 17:30:13.9147+03</td>
+      <td>postgres</td>
+      <td>{"item_id":3,"sale_id":2,"product_id":2410259,"products_count":1}</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

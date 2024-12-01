@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Книжный Магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #9370DB;
+            color: white;
+            padding: 1rem 2rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        .logout {
+            margin-top: 20px;
+            display: block;
+            color: #dc3545;
+            text-decoration: none;
+        }
+        .logout:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать в Книжный Магазин</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="/login">Войти</a></li>
+        <li><a href="/register">Создать аккаунт</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    {% if current_user.is_authenticated %}
+        <h2>Привет, {{ current_user.username }}. Вы вошли в систему как {{ current_user.role.value }}</h2>
+        <h3>Пожалуйста, выберите одну из доступных таблиц:</h3>
+        <ol>
+            {% for tables in roles_distr[current_user.role.value] %}
+                <li><a href="{{url_for(tables)}}">{{ tables }}</a></li>
+            {% endfor %}
+        </ol>
+        <a class="logout" href="/logout">Выйти</a>
+    {% else %}
+        <h2>Вы не вошли в систему</h2>
+        <p>Пожалуйста, <a href="/login">войдите</a> или <a href="/register">создайте аккаунт</a>.</p>
+    {% endif %}
+</div>
+
+</body>
+</html>
